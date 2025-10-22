@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  /* Fuentes */
+  --font-body: [ "Poppins", "sans-serif"];
+
+  /* Colores */
+  --color-bkg: #fff;
+  --color-muted: #f6ebda;
+  --color-accent1: #ffbd7f;
+  --color-accent2: #a0583c;
+  --color-dark2: #835e4c;
+  --color-dark1: #2f2105;
+  --color-text: #000;
+
+  /* Container */
+  --container-center: true;
+  --container-padding: 1rem;
+}
