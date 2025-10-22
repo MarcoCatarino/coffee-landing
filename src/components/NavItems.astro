@@ -1,0 +1,28 @@
+---
+import Link from "./ui/Link.astro";
+
+const navItems = [
+  { text: "Home", href: "/" },
+  { text: "Menu", href: "/menu" },
+  { text: "Delivery", href: "/delivery" },
+];
+
+const currentPage = Astro.url.pathname;
+---
+
+<ul class="hidden md:flex gap-6 items-center">
+  {
+    navItems.map((i) => (
+      <li>
+        <Link
+          href={i.href}
+          intent={"nav"}
+          size={"small"}
+          currentPage={currentPage === i.href}
+        >
+          {i.text}
+        </Link>
+      </li>
+    ))
+  }
+</ul>

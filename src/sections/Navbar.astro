@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon/components";
+
+import Link from "@ui/Link.astro";
+import Button from "@ui/Button.astro";
+import NavItems from "@components/NavItems.astro";
+import Search from "@components/Search.astro";
+---
+
+<nav class="min-w-full flex justify-between py-3 px-8 items-center">
+  <Link
+    href="/"
+    intent={"icon"}
+    size={"xsmall"}
+    aria-label="Go Home"
+    title="Go Home"
+  >
+    <Icon name="CoffeeLove" width={36} height={60} class="w-6 sm:w-9" />
+  </Link>
+
+  <NavItems />
+
+  <Search />
+
+  <Button
+    classes="md:hidden"
+    intent={"icon"}
+    size={"xsmall"}
+    aria-label="Open mobile nav"
+    id="mobile-nav"
+  >
+    <Icon name="mobile-nav" size={30} />
+  </Button>
+</nav>
+
+<script>
+  const mobileNavButton = document.querySelector(
+    "#mobile-nav"
+  ) as HTMLButtonElement;
+
+  mobileNavButton.addEventListener("click", () => {
+    alert("Hola");
+  });
+</script>
