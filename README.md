@@ -1,43 +1,34 @@
-# Astro Starter Kit: Minimal
+# Rules of the project
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+## Tasks
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1. Build out the landing
+2. Responsive Layout (Mobile & Desktop)
+3. Implement Hover State
 
-## 🚀 Project Structure
+## Layouts
 
-Inside of your Astro project, you'll see the following folders and files:
+- Mobile: 414px
+- Desktop: 1440px
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Typography
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+=> Poppins: [Google Fonts](https://fonts.google.com/specimen/Poppins)(300, 400, 600, 700)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Colors
 
-Any static assets, like images, can be placed in the `public/` directory.
+- White: #FFF
+- Albescent White: #F6EBDA
+- Macaroni & Cheese: #FFBD7F
+- Sepia Skin: #A0583C
+- Roman Coffee: #835E4C
+- Brown Tumbleweed: #2F2105
+- Black: #000
 
-## 🧞 Commands
+## Icons
 
-All commands are run from the root of the project, from a terminal:
+Suggestions that we can use:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+=> [Font Awesome](https://fontawesome.com)
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+=> [Iconify](https://iconify.design/)
