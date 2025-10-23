@@ -1,6 +1,7 @@
 ---
 import "@styles/global.css";
 import Navbar from "@sections/Navbar.astro";
+import Footer from "@sections/Footer.astro";
 
 const siteData = {
   title: "Coffee Website",
@@ -31,5 +32,6 @@ const { title = siteData.title, description = siteData.description } =
   <body class="max-w-7xl mx-auto text-text">
     <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>
