@@ -12,8 +12,13 @@
   --color-dark2: #835e4c;
   --color-dark1: #2f2105;
   --color-text: #000;
-
-  /* Container */
-  --container-center: true;
-  --container-padding: 1rem;
 }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    align-items: center;
+    padding: 2rem;
+  }
