@@ -7,15 +7,17 @@ import NavItems from "@components/NavItems.astro";
 import Search from "@components/Search.astro";
 ---
 
-<nav class="min-w-full flex justify-between py-3 px-8 items-center">
+<nav
+  class="container flex w-full justify-between py-3 items-center absolute left-1/2 -translate-x-1/2 z-50"
+>
   <Link
     href="/"
     intent={"icon"}
     size={"xsmall"}
-    aria-label="Go Home"
-    title="Go Home"
+    aria-label="Go home"
+    title="Go home"
   >
-    <Icon name="CoffeeLove" width={36} height={60} class="w-6 sm:w-9" />
+    <Icon name="CoffeeLove" width={36} height={60} class="size-6 sm:size-9" />
   </Link>
 
   <NavItems />
